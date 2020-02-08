@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "cross-env PORT=13337 node index.js",
+    "client": "cross-env PORT=10080 node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
     "ua-parser-js": "^0.7.18",
     "ws": "^6.0.0"
   }
